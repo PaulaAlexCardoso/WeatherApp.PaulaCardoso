@@ -22,6 +22,163 @@
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
+    <div class="container">
+      <div class="weather">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Enter a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-light shadow-sm"
+              />
+              <br />
+              <br />
+              <span class="button">
+                <button
+                  class="btn btn-light shadow-sm w-900"
+                  id="current-location-button"
+                >
+                  Current Location
+                </button>
+              </span>
+            </div>
+          </div>
+        </form>
+        <h1 id="city">Lisbon</h1>
+
+        <h2>
+          🌧
+          <span class="temperature" id="temperature">19</span>
+          <span class="units">
+            <a href="#" id="celsius-link">ºC</a> |
+            <a href="#" id="fahrenheit-link">ºF</a>
+          </span>
+        </h2>
+
+        <br />
+        <div class="row">
+          <div class="col-8">
+            <ul>
+              <li id="date"></li>
+              <li id="description">Rain</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul>
+              <div class="today">
+                <li>Precipitation: <span id="precipitation"></span> mm</li>
+                <li>Humidity: <span id="humidity"></span> %</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <form class="row">
+          <div class="col">
+            <div class="weekday">
+              Fri
+              <div class="dayemoji">
+                ⛅️
+                <div class="daytemp">
+                  <span class="today-min"> 14º/</span>
+                  <span class="today-max"> 23º</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="weekday">
+              Sat
+              <div class="dayemoji">
+                ⛅️
+                <div class="daytemp">
+                  <span class="today-min"> 13º/</span>
+                  <span class="today-max"> 27º</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="weekday">
+              Sun
+              <div class="dayemoji">
+                ☀️
+                <div class="daytemp">
+                  <span class="today-min"> 13º/</span>
+                  <span class="today-max"> 27º</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="weekday">
+              Mon
+              <div class="dayemoji">
+                ☀️
+                <div class="daytemp">
+                  <span class="today-min"> 17º/</span>
+                  <span class="today-max"> 28º</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="weekday">
+              Tue
+              <div class="dayemoji">
+                ☀️
+                <div class="daytemp">
+                  <span class="today-min"> 16º/</span>
+                  <span class="today-max"> 27º</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="weekday">
+              Wed
+              <div class="dayemoji">
+                ⛅️
+                <div class="daytemp">
+                  <span class="today-min"> 16º/</span>
+                  <span class="today-max"> 27º</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="weekday">
+              Thu
+              <div class="dayemoji">
+                ⛅️
+                <div class="daytemp">
+                  <span class="today-min"> 17º/</span>
+                  <span class="today-max"> 27º</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="./src/script.js"></script>
   </body>
 </html>
